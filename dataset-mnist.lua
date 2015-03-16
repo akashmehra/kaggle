@@ -96,9 +96,9 @@ function mnist.loadDataset(fileName,maxLoad,skipRecords,geometry)
 					local input = self.data[index]
 					local class = self.labels[index]
 					local label = labelvector:zero()
-			  		label[class] = 1
-			    	local example = {input, label}
-               		return example
+					label[class] = 1
+					local example = {input, label}
+					return example
    	end})
 
 	return dataset
